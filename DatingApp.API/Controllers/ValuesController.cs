@@ -21,11 +21,12 @@ namespace DatingApi.API.Controllers
 
         }
         // GET api/values
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetValues()
         {
             var values = await context.Values.ToListAsync();
-            
+
             return Ok(values);
         }
 
