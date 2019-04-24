@@ -22,7 +22,7 @@ export class NavComponent implements OnInit {
         this.alertify.success('Login success');
     }, error =>{
       this.alertify.error(error);
-    }() => {
+    },() => {
       this.router.navigate(['/members']);
     });
     }
